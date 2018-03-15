@@ -21,7 +21,7 @@
     ① 按 sessionId 分表 sessionId uid sessionType readTime
     ② redis:   key: uid   value: List<String> (sessionId)
 
-1000000 * 100keysHash + 1000000 * 10keyList = 
+1000000 * 100keysHash + 1000000 * 10keyList => 16G   
 
 session_status: 152000条数据
 其中 不重复uid: 4900个
